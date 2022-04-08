@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export const Content_bg = (props) => {
+const Content_bg = (props) => {
   const { bg_url, bg_position, content_ttl, content_detail, bg_size } = props;
 
   const contentStyle = {
@@ -31,3 +31,5 @@ export const Content_bg = (props) => {
 Content_bg.defaultProps = {
   bg_position: "center",
 };
+
+export default Content_bg;

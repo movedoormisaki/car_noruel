@@ -8,7 +8,7 @@ const StyleGallery = styled.div`
   }
 `;
 
-export const Grid_img = (props) => {
+const Grid_img = (props) => {
   let count = 9;
   if (isMobile) {
     count = 8;
@@ -50,3 +50,5 @@ const choose_at_random = (arrayData, count) => {
   }
   return result;
 };
+
+export default Grid_img;

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Global_menu_sp } from "../components/Nav/global_menu_sp";
-import { Global_menu_pc } from "../components/Nav/global_menu_pc";
-import { Navbar } from "../components/Nav/Navbar";
+import Global_menu_sp from "../components/Nav/global_menu_sp";
+import Global_menu_pc from "../components/Nav/global_menu_pc";
+import Navbar from "../components/Nav/Navbar";
 import { isMobile } from "react-device-detect";
 import logo from "../public/img/logo_white.svg";
-import { getWindowSize } from "./useWindowDimensions";
+import getWindowSize from "./useWindowDimensions";
 import styled from "styled-components";
 import Slider from "react-slick";
 
@@ -14,7 +14,7 @@ import Slider from "react-slick";
 
 const company_name = "CAR NORUEL\nINTERNATIONAL";
 
-export const First_view = (props) => {
+const First_view = (props) => {
   const { height, width } = getWindowSize();
   //const { height, width } = useWindowDimensions();
   const [count, setCount] = useState(0);
@@ -83,3 +83,5 @@ export const First_view = (props) => {
     </>
   );
 };
+
+export default First_view;

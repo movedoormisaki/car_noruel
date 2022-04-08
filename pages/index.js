@@ -4,12 +4,12 @@ import Image from "next/image";
 import logo from "../public/img/logo_white.svg";
 import top_img from "../public/img/top_bg.jpg";
 import concept_img from "../public/img/concept_img.jpg";
-import { Concept } from "../components/concept";
-import { Content_bg } from "../components/content_bg";
-import { Content_ttl } from "../components/content_ttl";
-import { Grid_img } from "../components/grid_img";
-import { Sns_link } from "../components/sns_link";
-import { First_view } from "../components/first_view";
+import Concept from "../components/concept";
+import Content_bg from "../components/content_bg";
+import Content_ttl  from "../components/content_ttl";
+import  Grid_img  from "../components/grid_img";
+import  Sns_link  from "../components/sns_link";
+import  First_view  from "../components/first_view";
 
 import bmw_bg from "../public/img/bmw_bg.jpg";
 import mercedes_bg from "../public/img/mercedes_benz_bg.jpg";

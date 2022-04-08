@@ -1,7 +1,7 @@
 import React from "react";
 import { isMobile } from "react-device-detect";
 
-export const Concept = (props) => {
+const Concept = (props) => {
   const { concept_ttl, concept_img } = props;
   let concept_detail_sentence = "";
 
@@ -39,3 +39,5 @@ export const Concept = (props) => {
     </div>
   );
 };
+
+export default Concept;

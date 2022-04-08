@@ -9,7 +9,7 @@ const Global_menu_style = styled.ul`
   touch-action: ${({ open }) => (open ? "auto" : "none")};
 `;
 
-export const Global_menu_sp = (props) => {
+const Global_menu_sp = (props) => {
   const menu = ["SERVICE", "LINEUP", "ABOUTUS", "CONTACT"];
   const { open, onClick } = props;
   return (
@@ -28,3 +28,5 @@ export const Global_menu_sp = (props) => {
     </>
   );
 };
+
+export default Global_menu_sp;

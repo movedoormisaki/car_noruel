@@ -1,10 +1,12 @@
 import React from "react";
 import { Burger } from "./Burger";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <>
       <Burger />
     </>
   );
 };
+
+export default Navbar;

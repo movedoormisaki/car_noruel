@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Global_menu_sp } from "./global_menu_sp";
+import Global_menu_sp from "./global_menu_sp";
 
 const StyleBurger = styled.div`
   width: 2rem;
@@ -30,7 +30,7 @@ const StyleBurger = styled.div`
   }
 `;
 
-export const Burger = () => {
+const Burger = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -42,3 +42,5 @@ export const Burger = () => {
     </>
   );
 };
+
+export default Burger;
