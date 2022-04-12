@@ -357,8 +357,8 @@ header {
     display: flex;
     align-items: center;
     div.concept_img {
-      background: url(../public/img/concept_img.jpg) center center / cover
-        no-repeat;
+      background-image: url(../public/img/concept_img.jpg);
+      @include has-background();
       @include liquidSize(width, 716, 560, 350);
       @include liquidSize(height, 716, 560, 350);
     }
@@ -553,8 +553,8 @@ div.content_ttl {
         justify-content: space-around;
       }
       .aboutus_icon {
-        background: url(../public/img/profile_icon.jpg) 45% 70% / cover
-          no-repeat;
+        background-image: url(../public/img/profile_icon.jpg);
+        @include has-background();
         @include liquidSize(width, 150, 130, 100);
         @include liquidSize(height, 150, 130, 100);
         border-radius: 100px;
