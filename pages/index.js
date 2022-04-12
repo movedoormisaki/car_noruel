@@ -6,10 +6,10 @@ import top_img from "../public/img/top_bg.jpg";
 import concept_img from "../public/img/concept_img.jpg";
 import Concept from "../components/concept";
 import Content_bg from "../components/content_bg";
-import Content_ttl  from "../components/content_ttl";
-import  Grid_img  from "../components/grid_img";
-import  Sns_link  from "../components/sns_link";
-import  First_view  from "../components/first_view";
+import Content_ttl from "../components/content_ttl";
+import Grid_img from "../components/grid_img";
+import Sns_link from "../components/sns_link";
+import First_view from "../components/first_view";
 
 import bmw_bg from "../public/img/bmw_bg.jpg";
 import mercedes_bg from "../public/img/mercedes_benz_bg.jpg";
@@ -63,12 +63,10 @@ export default function Home() {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
         />
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-          crossorigin="anonymous"
         ></script>
         <link
           rel="stylesheet"
