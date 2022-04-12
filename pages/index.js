@@ -27,6 +27,7 @@ import deco_4 from "../public/img/deco_4.jpg";
 import service_img_1 from "../public/img/service_img_1.jpg";
 import service_img_2 from "../public/img/service_img_2.jpg";
 import service_img_3 from "../public/img/service_img_3.jpg";
+import profile_icon from "../public/img/profile_icon.jpg";
 
 export default function Home() {
   const lineup_keyword =
@@ -156,7 +157,10 @@ export default function Home() {
         <div className="container aboutus_inner">
           <div className="row">
             <div className="col-md-6 row">
-              <div className="col-5 aboutus_icon"></div>
+              <div
+                className="col-5 aboutus_icon"
+                style={{ backgroundImage: `url(${profile_icon.src})` }}
+              ></div>
               <div className="col-7">
                 <p>株式会社カーノルエル</p>
                 <p>代表取締役</p>

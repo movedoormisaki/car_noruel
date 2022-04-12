@@ -29,7 +29,10 @@ const Concept = (props) => {
             return (
               <>
                 <section className="col-sm-6">
-                  <div className="concept_img" />
+                  <div
+                    className="concept_img"
+                    style={{ backgroundImage: `url(${concept_img.src})` }}
+                  />
                 </section>
               </>
             );
