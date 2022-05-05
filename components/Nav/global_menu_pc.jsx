@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Global_menu_style = styled.ul`
@@ -10,17 +10,19 @@ const Global_menu_pc = () => {
   const menu = ["SERVICE", "LINEUP", "ABOUTUS", "CONTACT"];
   return (
     <>
-      <Global_menu_style>
-        {menu.map((item, index) => {
-          return (
-            <li key={index}>
-              <a href={"#" + item} rel="noopener">
-                {item}
-              </a>
-            </li>
-          );
-        })}
-      </Global_menu_style>
+      <nav>
+        <Global_menu_style>
+          {menu.map((item, index) => {
+            return (
+              <li key={index}>
+                <a href={"#" + item} rel="noopener">
+                  {item}
+                </a>
+              </li>
+            );
+          })}
+        </Global_menu_style>
+      </nav>
     </>
   );
 };

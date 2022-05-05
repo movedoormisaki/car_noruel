@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Global_menu_sp from "../components/Nav/global_menu_sp";
 import Global_menu_pc from "../components/Nav/global_menu_pc";
 import Navbar from "../components/Nav/Navbar";
-import { isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 import GetWindowSize from "./useWindowDimensions";
 import styled from "styled-components";
 import Slider from "react-slick";
@@ -41,7 +40,12 @@ const First_view = (props) => {
               <h1 className="white_space">{company_name}</h1>
             </a>
           </Link>
-          <Global_menu_pc />
+          <MobileView>
+            <Navbar />
+          </MobileView>
+          <BrowserView>
+            <Global_menu_pc />
+          </BrowserView>
         </header>
         <StyleFirstView>
           <Slider {...settings}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Global_menu_style = styled.ul`
@@ -14,17 +14,19 @@ const Global_menu_sp = (props) => {
   const { open, onClick } = props;
   return (
     <>
-      <Global_menu_style open={open}>
-        {menu.map((item, index) => {
-          return (
-            <li key={index}>
-              <a onClick={onClick} href={"#" + item} rel="noopener">
-                {item}
-              </a>
-            </li>
-          );
-        })}
-      </Global_menu_style>
+      <nav>
+        <Global_menu_style open={open}>
+          {menu.map((item, index) => {
+            return (
+              <li key={index}>
+                <a onClick={onClick} href={"#" + item} rel="noopener">
+                  {item}
+                </a>
+              </li>
+            );
+          })}
+        </Global_menu_style>
+      </nav>
     </>
   );
 };
