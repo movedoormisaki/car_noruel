@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Global_menu_sp from "../components/Nav/global_menu_sp";
-import Global_menu_pc from "../components/Nav/global_menu_pc";
+import { Global_menu_sp } from "../components/Nav/global_menu_sp";
+import { Global_menu_pc } from "../components/Nav/global_menu_pc";
 import Navbar from "../components/Nav/Navbar";
 import { isMobile } from "react-device-detect";
 import GetWindowSize from "./useWindowDimensions";

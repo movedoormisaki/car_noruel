@@ -18,7 +18,7 @@ const Global_menu_sp = (props) => {
         {menu.map((item, index) => {
           return (
             <li key={index}>
-              <a onClick={onClick} href={"#" + item} rel="noopener noreferrer">
+              <a onClick={onClick} href={"#" + item} rel="noopener">
                 {item}
               </a>
             </li>

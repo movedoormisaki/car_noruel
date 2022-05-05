@@ -14,7 +14,7 @@ const Global_menu_pc = () => {
         {menu.map((item, index) => {
           return (
             <li key={index}>
-              <a href={"#" + item} rel="noopener noreferrer">
+              <a href={"#" + item} rel="noopener">
                 {item}
               </a>
             </li>
