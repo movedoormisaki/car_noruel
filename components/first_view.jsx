@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Global_menu_pc from "../components/Nav/global_menu_pc";
 import Navbar from "../components/Nav/Navbar";
@@ -12,6 +12,9 @@ const company_name = "CAR NORUEL\nINTERNATIONAL";
 const First_view = (props) => {
   const { height, width } = GetWindowSize();
   const [count, setCount] = useState(0);
+  useEffect(() => {
+    setCount(0);
+  }, []);
   const { top_img } = props;
   console.log(top_img);
 
@@ -28,7 +31,8 @@ const First_view = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
+    speed: 1000,
   };
 
   return (

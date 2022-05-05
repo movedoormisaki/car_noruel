@@ -33,7 +33,7 @@ const StyleBurger = styled.div`
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
-    setOpen(true);
+    setOpen(false);
   }, []);
 
   return (

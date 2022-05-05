@@ -333,6 +333,7 @@ header {
 
 .top_view {
   position: relative;
+  overflow: hidden;
   img {
     @include liquidSize(width, 500, 450, 185);
     overflow: hidden;
