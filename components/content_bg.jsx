@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const Content_bg = (props) => {
   const { bg_url, bg_position, content_ttl, content_detail, bg_size } = props;

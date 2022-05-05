@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import Global_menu_sp from "../components/Nav/global_menu_sp";
 import Global_menu_pc from "../components/Nav/global_menu_pc";
 import Navbar from "../components/Nav/Navbar";
 import { isMobile } from "react-device-detect";
-import logo from "../public/img/logo_white.svg";
 import GetWindowSize from "./useWindowDimensions";
 import styled from "styled-components";
 import Slider from "react-slick";
@@ -48,6 +46,7 @@ const First_view = (props) => {
               return (
                 <>
                   <Navbar />
+                  <Global_menu_sp />
                 </>
               );
             } else {

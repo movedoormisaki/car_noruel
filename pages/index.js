@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import logo from "../public/img/logo_white.svg";
 import top_img from "../public/img/top_bg.jpg";
@@ -51,6 +50,7 @@ export default function Home() {
   const top_img_array = [top_img, concept_img, service_img_3];
 
   const company_name = "CAR NORUEL\nINTERNATIONAL";
+
   return (
     <>
       <Head>
