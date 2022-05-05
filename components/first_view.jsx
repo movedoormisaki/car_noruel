@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { Global_menu_sp } from "../components/Nav/global_menu_sp";
-import { Global_menu_pc } from "../components/Nav/global_menu_pc";
+import Global_menu_sp from "../components/Nav/global_menu_sp";
+import Global_menu_pc from "../components/Nav/global_menu_pc";
 import Navbar from "../components/Nav/Navbar";
 import { isMobile } from "react-device-detect";
 import GetWindowSize from "./useWindowDimensions";
@@ -41,22 +41,7 @@ const First_view = (props) => {
               <h1 className="white_space">{company_name}</h1>
             </a>
           </Link>
-          {(() => {
-            if (isMobile) {
-              return (
-                <>
-                  <Navbar />
-                  <Global_menu_sp />
-                </>
-              );
-            } else {
-              return (
-                <>
-                  <Global_menu_pc />
-                </>
-              );
-            }
-          })()}
+          <Global_menu_pc />
         </header>
         <StyleFirstView>
           <Slider {...settings}>
